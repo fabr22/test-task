@@ -4,6 +4,7 @@ import ShowDescriptionBlock from "../../../components/showDescriptionBlock/ShowD
 import ShowPageWrapper from "../../../components/showPageWrapper/ShowPageWrapper";
 import ShowInfo from "../../../components/showInfo/ShowInfo";
 import styles from "../../../styles/Show.module.scss";
+import { GetServerSideProps } from "next";
 
 const ShowPage = ({ show }: { show: IShow }) => {
   return (
@@ -30,9 +31,9 @@ const ShowPage = ({ show }: { show: IShow }) => {
   );
 };
 
-export const getServerSideProps = async (context: any) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const id = context.query.id;
-  const data = await httpClient.getShow(id);
+  const data = await httpClient.getShow(`${id}`);
 
   return {
     props: {
