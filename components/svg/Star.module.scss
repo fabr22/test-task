@@ -1,0 +1,11 @@
+@import "styles/variables";
+
+.starSvg {
+  width: 10px !important;
+  height: 10px !important;
+
+  @media screen and (min-width: $tablet) {
+    width: 15px;
+    height: 15px;
+  }
+}

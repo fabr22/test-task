@@ -1,0 +1,55 @@
+@import "styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  .filedTitle {
+    font-size: 1.4rem;
+    font-weight: normal;
+    min-width: 8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .filedValue {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #9d9d9d;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      column-gap: 3rem;
+      border-bottom: 1px solid black;
+      padding: 1.5rem 0;
+    }
+  }
+
+  .fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0;
+    column-gap: 2rem;
+    width: 100%;
+    row-gap: 2rem;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 0;
+    }
+  }
+}

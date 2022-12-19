@@ -1,0 +1,32 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 2rem;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .cardImage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardTitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.4rem;
+    color: black;
+  }
+}

@@ -1,0 +1,37 @@
+@import "styles/variables";
+
+.pageWrapper {
+  background: linear-gradient(0, #ffffff 97%, #ededed 3%);
+  padding: 0 2rem;
+  @media screen and (min-width: $tablet) {
+    background: linear-gradient(0, #ffffff 92.5%, #ededed 7.5%);
+    padding: 0 3rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    background: linear-gradient(0, #ffffff 90%, #ededed 10%);
+    padding: 0 5rem;
+  }
+
+  @media screen and (min-width: $laptopM) {
+    background: linear-gradient(0, #ffffff 87.5%, #ededed 12.5%);
+
+    padding: 0 10rem;
+  }
+
+  @media screen and (min-width: $laptopL) {
+    background: linear-gradient(0, #ffffff 86%, #ededed 14%);
+    padding: 0 10rem;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+  }
+}

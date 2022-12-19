@@ -1,0 +1,27 @@
+@import "styles/variables";
+
+.column {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4rem;
+  padding: 0 2rem;
+
+  @media screen and (min-width: $mobileM) {
+    padding: 0 3rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3rem;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+  }
+}
